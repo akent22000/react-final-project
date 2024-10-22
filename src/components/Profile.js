@@ -1,8 +1,8 @@
 
-function Profile() {
+function Profile({ kitty }) {
   return (
     <div className="App">
-      <h1>Profile</h1>
+      <h4>{kitty.name}</h4>
     </div>
   );
 }

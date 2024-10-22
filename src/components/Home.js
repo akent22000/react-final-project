@@ -1,26 +1,17 @@
-
-import React, { useState, useEffect } from "react";
-import KittyList from "./KittyList";
+import { Outlet, useOutletContext } from "react-router-dom";
+import KittyCard from "./KittyCard";
 
 function Home() {
-
-  const [showForm, setShowForm] = useState(false);
-  const [kittys, setKittys] = useState([])
-
-
-  useEffect(() => {
-    fetch('http://localhost:6001/kittys')
-      .then((r) => r.json())
-      .then((kittys) => setKittys(kittys))
-
-  }, [])
-
-
+  const kittys = useOutletContext();
+  const displaykittys = kittys.map(kitty =>
+    <KittyCard key={kitty.id} kitty={kitty} />);
 
   return (
-    <KittyList
-      kittys={kittys} />
+    <main>
+      <Outlet context={kittys} />
+      <ul className="cards">{displaykittys}</ul>
+    </main>
   );
-}
+};
 
 export default Home;
