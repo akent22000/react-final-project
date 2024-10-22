@@ -1,0 +1,22 @@
+{
+    "kittys": [
+        {
+            "id": 1,
+            "name": "Hello Kitty",
+            "image": "images/helloKitty.webp",
+            "bio": "Hello Kitty is very energetic, bright, and friendly."
+        },
+        {
+            "id": 2,
+            "name": "Kuromi",
+            "image": "images/kuromi.webp",
+            "bio": "Kuromi is a tomboy, but behind her tough appearance, she is actually very girly."
+        },
+        {
+            "id": 3,
+            "name": "My Melody",
+            "image": "images/myMelody.webp",
+            "bio": "My Melody is a very honest, good-natured girl. Her favorite food is almond pound cake."
+        }
+    ]
+}
