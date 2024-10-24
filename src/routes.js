@@ -15,6 +15,7 @@ const routes = [
       {
         path: "/",
         element: <Home />,
+
       },
       {
         path: "/form",

@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Header from "./components/Header";
+import CharacterForm from "./components/CharacterForm";
+
 
 function App() {
   const [kittys, setKittys] = useState([]);
@@ -13,6 +15,9 @@ function App() {
       .catch(error => console.error(error));
   }, []);
 
+  const onAdd = (newKitty) => {
+    setKittys([...kittys, newKitty])
+  }
 
   return (
     <>
@@ -20,8 +25,8 @@ function App() {
         <Header />
         <NavBar />
       </header>
-      <Outlet context={kittys} />
 
+      <Outlet context={kittys} />
     </>
   );
 };

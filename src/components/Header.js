@@ -4,7 +4,7 @@ function Header() {
   return (
     <header className="header">
       <h1>
-        HELLO KITTY WORLD
+        HELLO KITTY & FRIENDS
       </h1>
     </header>
   );
