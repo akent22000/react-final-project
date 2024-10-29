@@ -4,7 +4,6 @@
       "id": "1",
       "name": "Hello Kitty",
       "image": "images/helloKitty.webp",
-      "banner": "images/helloKittyBanner.jpg",
       "bio": "Hello Kitty is very energetic, bright, and friendly.",
       "birthday": "November 1",
       "likes": "Traveling, music, reading, making new friends, and eating cookies"
@@ -13,7 +12,6 @@
       "id": "2",
       "name": "Kuromi",
       "image": "images/kuromi.webp",
-      "banner": "images/helloKittyBanner.avif",
       "bio": "Kuromi is a tomboy, but behind her tough appearance, she is actually very girly.",
       "birthday": "October 31",
       "likes": "Romantic short stories, food, shallots, meat, black, hot pink, purple, making mischief"
@@ -22,42 +20,25 @@
       "id": "3",
       "name": "My Melody",
       "image": "images/myMelody.webp",
-      "banner": "images/helloKittyBanner.avif",
       "bio": "My Melody is a very honest, good-natured girl. Her favorite food is almond pound cake.",
       "birthday": "January 18",
       "likes": "Crafts and loves baking cookies with her"
     },
     {
-      "id": "9a44",
-      "name": "",
-      "image": "",
-      "bio": "",
-      "birthday": "",
-      "likes": ""
+      "id": "4",
+      "name": "Gudetama",
+      "image": "images/gu.jpg",
+      "bio": "Is seriously too lazy to write facts… whatever.",
+      "birthday": "Every day is it's birthday",
+      "likes": "Napping, watching TV, playing video games"
     },
     {
-      "id": "ab20",
-      "name": "",
-      "image": "",
-      "bio": "",
-      "birthday": "",
-      "likes": ""
-    },
-    {
-      "id": "ffec",
-      "name": "",
-      "image": "",
-      "bio": "",
-      "birthday": "",
-      "likes": ""
-    },
-    {
-      "id": "022d",
-      "name": "",
-      "image": "",
-      "bio": "",
-      "birthday": "",
-      "likes": ""
+      "id": "a38f",
+      "name": "Keroppi",
+      "image": "https://cdn.shopify.com/s/files/1/0568/2298/8958/files/hello-kitty-and-friends-04_480x480.jpg?v=1695364963",
+      "bio": "Fun",
+      "birthday": "June 3",
+      "likes": "Peanuts, Pears"
     }
   ]
 }

@@ -9,26 +9,39 @@ body {
 }
 
 .container {
+  display: block;
+  text-align: center;
+  margin: 1rem;
+
+}
+
+.profileContainer {
+  display: inline-block;
   margin: 1rem;
   border: 4px dotted;
   padding: 20px;
 }
 
-.container h4 {
+.profileContainer h4 {
   text-align: left;
   padding: 5px;
   font-size: 40px;
 }
 
-.container p {
+.profileContainer p {
   text-align: left;
   padding: 5px;
   font-size: 18px;
 
 }
 
+.pageName {
+  text-align: center;
+  color: #7b78a4;
+}
 
-.container img {
+
+.profileContainer img {
   width: 100%;
 }
 
@@ -50,19 +63,17 @@ button {
   font-family: inherit;
   border: none;
   cursor: pointer;
+  color: #fff;
 }
 
 button.primary {
   background-color: #b4b0f0;
-  outline: none;
   cursor: pointer;
   font-size: 16px;
   line-height: 20px;
   font-weight: 600;
   border-radius: 8px;
   padding: 10px;
-  color: #fff;
-  text-decoration: none;
 }
 
 .app {
@@ -75,55 +86,8 @@ main {
   padding: 0 1rem;
 }
 
-.new-plant-form {
-  padding: 2rem 1rem;
-  margin: 2rem 0;
-  background-color: rgba(181, 250, 181, 0.5);
-}
-
-.new-plant-form form {
-  display: flex;
-  justify-content: center;
-}
-
-.new-plant-form input {
-  margin-right: 2rem;
-  flex: 1;
-}
-
-.new-plant-form button {
-  width: 150px;
-}
-
-.searchbar {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  font-weight: bold;
-  display: block;
-}
-
-input {
-  padding: 0.25rem;
-  border: none;
-  font-family: inherit;
-  font-size: 1.2em;
-  border-bottom: 2px solid gray;
-  transition: all 0.2s;
-  width: 100%;
-}
-
-input:focus {
-  outline: none;
-  border-bottom: 2px solid var(--green);
-}
-
 .cards {
   list-style: none;
-
 }
 
 .card h4 {
@@ -146,6 +110,8 @@ input:focus {
 .card button {
   display: block;
   margin: auto;
+  color: #fff;
+
 }
 
 @media (min-width: 768px) {
@@ -169,4 +135,67 @@ input:focus {
   .card {
     width: calc(20% - 2rem);
   }
+}
+
+
+
+
+input[type=text],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.formContainer {
+  display: block;
+  text-align: center;
+  margin: 1rem;
+
+}
+
+.form {
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #7ed957;
+  padding: 20px;
+  max-width: 400px;
+}
+
+
+.form button {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 10px 20px;
+  border: none;
+  background: #ff66c4;
+  color: #fff;
+  margin: 20px;
+  text-decoration: none;
 }

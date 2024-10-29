@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import { Outlet, useOutletContext } from "react-router-dom";
 
 function CharacterForm() {
-  const kittys = useOutletContext();
-  const onAdd = useOutletContext();
+  const { onAdd } = useOutletContext();
+  //object destructuring
 
+  // console.log(contextReturn)
   const [name, setName] = useState("");
   const [image, setImage] = useState("");
   const [bio, setBio] = useState("");
@@ -37,31 +38,36 @@ function CharacterForm() {
 
   return (
     <div>
-      <h1>Create a New Character!</h1>
+      <h1 className="pageName">Create a New Character!</h1>
 
-      <div className="new-plant-form">
-        <form onSubmit={handleSubmit}>
+      <div className="formContainer">
+        <form className="form" onSubmit={handleSubmit}>
           <input type="text"
+            id="fname"
             name="name"
             onChange={(e) => setName(e.target.value)}
             value={name}
             placeholder={"Character name"} />
           <input type="text"
+            id="fname"
             name="image"
             onChange={(e) => setImage(e.target.value)}
             value={image}
             placeholder="Image URL" />
           <input type="text"
+            id="fname"
             name="bio"
             onChange={(e) => setBio(e.target.value)}
             value={bio}
             placeholder="Bio" />
           <input type="text"
+            id="fname"
             name="birthday"
             onChange={(e) => setBirthday(e.target.value)}
             value={birthday}
             placeholder="Birthday" />
           <input type="text"
+            id="fname"
             name="likes"
             onChange={(e) => setLikes(e.target.value)}
             value={likes}

@@ -1,26 +1,25 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { Outlet, useOutletContext } from "react-router-dom";
 
 
 function Profile() {
-  const [kitty, setKitty] = useOutletContext();
+  const [kitty, setKittys] = useState({});
   const params = useParams();
   const kitttyId = params.id;
+
 
   useEffect(() => {
     fetch(`http://localhost:6001/kittys/${kitttyId}`)
       .then(r => r.json())
-      .then(data => setKitty(data))
+      .then(data => setKittys(data))
       .catch(error => console.error(error))
   }, [kitttyId]);
 
   return (
 
-    <div className="">
-      <h1>About Me</h1>
-      <div className="container">
-        <img src={kitty.banner} alt={kitty.name} />
+    <div className="container">
+      <h1 className="pageName">About Me</h1>
+      <div className="profileContainer">
         <h4>{kitty.name}</h4>
         <p><b>About Me:</b> {kitty.bio}</p>
         <p><b>Birthday:</b> {kitty.birthday}</p>

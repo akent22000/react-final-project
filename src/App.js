@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Header from "./components/Header";
-import CharacterForm from "./components/CharacterForm";
 
 
 function App() {
@@ -19,14 +18,23 @@ function App() {
     setKittys([...kittys, newKitty])
   }
 
+
+  const contextObj = {
+    name: "Amanda",
+    kittys: kittys,
+    onAdd: onAdd,
+  }
+
+  ///look up context lab in useState
+
+
   return (
     <>
       <header>
         <Header />
         <NavBar />
       </header>
-
-      <Outlet context={kittys} />
+      <Outlet context={contextObj} />
     </>
   );
 };
