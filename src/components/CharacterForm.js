@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import { Outlet, useOutletContext } from "react-router-dom";
+import { useOutletContext } from "react-router-dom";
 
 function CharacterForm() {
   const { onAdd } = useOutletContext();
   //object destructuring
 
-  // console.log(contextReturn)
   const [name, setName] = useState("");
   const [image, setImage] = useState("");
   const [bio, setBio] = useState("");
@@ -31,9 +30,16 @@ function CharacterForm() {
       }),
     })
       .then((r) => r.json())
-      .then(data => onAdd(data)) //THIS STATE UPDATE IS REQUIRED!!!
+      .then(data => onAdd(data))
 
+    //reset form/clear form inputs
+    setName('')
+    setImage('')
+    setBio('')
+    setBirthday('')
+    setLikes('')
   }
+
 
 
   return (
