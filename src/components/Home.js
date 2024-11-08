@@ -3,7 +3,6 @@ import KittyCard from "./KittyCard";
 
 
 function Home() {
-  //object destructuring 
   const { kittys } = useOutletContext();
 
   const displaykittys = kittys.map(kitty =>

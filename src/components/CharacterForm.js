@@ -3,7 +3,6 @@ import { useOutletContext } from "react-router-dom";
 
 function CharacterForm() {
   const { onAdd } = useOutletContext();
-  //object destructuring
 
   const [name, setName] = useState("");
   const [image, setImage] = useState("");
@@ -32,7 +31,6 @@ function CharacterForm() {
       .then((r) => r.json())
       .then(data => onAdd(data))
 
-    //reset form/clear form inputs
     setName('')
     setImage('')
     setBio('')
