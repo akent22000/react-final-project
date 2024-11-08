@@ -22,7 +22,7 @@
       "image": "images/myMelody.webp",
       "bio": "My Melody is a very honest, good-natured girl. Her favorite food is almond pound cake.",
       "birthday": "January 18",
-      "likes": "Crafts and loves baking cookies with her"
+      "likes": "Crafts and loves baking cookies with her mama"
     },
     {
       "id": "4",
@@ -31,14 +31,6 @@
       "bio": "Is seriously too lazy to write facts… whatever.",
       "birthday": "Every day is it's birthday",
       "likes": "Napping, watching TV, playing video games"
-    },
-    {
-      "id": "ac56",
-      "name": "Pom Pom",
-      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Hello_kitty_character_portrait.png/220px-Hello_kitty_character_portrait.png",
-      "bio": "Fun",
-      "birthday": "June 3",
-      "likes": "Peanuts, Pears"
     }
   ]
 }

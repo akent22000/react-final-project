@@ -1,6 +1,16 @@
 import React, { useState } from "react";
 import { useOutletContext } from "react-router-dom";
 
+
+//create character example
+// Cinnamoroll
+// https://images.surferseo.art/875d2b5b-6648-4d3c-a3bf-a4e9b7f7271f.webp
+// Cinnamoroll is a bit shy, he can spread happiness wherever he goes and make friends with everyone he meets
+// March 6
+// Dancing like his favorite pop idols
+
+
+
 function CharacterForm() {
   const { onAdd } = useOutletContext();
 
@@ -37,8 +47,6 @@ function CharacterForm() {
     setBirthday('')
     setLikes('')
   }
-
-
 
   return (
     <div>
